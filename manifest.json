@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "CSX",
+    "description": "CSX (without the anxiety)",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "zen.jpg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://csx.codesmith.io/units*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
